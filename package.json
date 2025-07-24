@@ -1,0 +1,28 @@
+{
+  "name": "nuxt-harmony",
+  "version": "1.0.0",
+  "description": "гармония и порядок в nuxt проекте",
+  "main": "index.js",
+  "scripts": {
+    "build-dp": "tsc scripts/dp.mts --skipLibCheck --allowSyntheticDefaultImports --module ESNext --target ESNext --outDir ./dist --moduleResolution node",
+    "build-css": "tsc scripts/css.mts --skipLibCheck --allowSyntheticDefaultImports --module ESNext --target ESNext --outDir ./dist --moduleResolution node",
+    "build": "npm run build-dp && npm run build-css",
+    "dp": "npm run build-dp && node dist/dp.mjs",
+    "css": "npm run css && node dist/css.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Skripachcpp/nuxt-harmony.git"
+  },
+  "author": "skripachcpp",
+  "bugs": {
+    "url": "https://github.com/Skripachcpp/nuxt-harmony/issues"
+  },
+  "homepage": "https://github.com/Skripachcpp/nuxt-harmony#readme",
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "tsc": "2.0.4",
+    "typescript": "^5.8.3",
+    "chalk": "5.4.1"
+  }
+}
